@@ -16,7 +16,8 @@ app.use('/api',appRoutes);
 
 //'mongodb://localhost:27017/project'
 //mongodb://<dbuser>:<dbpassword>@ds131384.mlab.com:31384/heroku_rwqvsl1q
-mongoose.connect('mongodb://<taki>:<taki>@ds131384.mlab.com:31384/heroku_rwqvsl1q', function(err){
+//'mongodb://<taki>:<taki>@ds131384.mlab.com:31384/heroku_rwqvsl1q'
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/project', function(err){
 	if(err){
 		console.log('Not connected to the database!!! ' + err);
 		} else {
