@@ -1,18 +1,10 @@
 {
-  "name": "wep",
-  "version": "1.0.0",
-  "description": "mean stack application",
-  "main": "server.js",
+  "name": "tarik",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node ./server.js"
   },
-  "keywords": [
-    "MEAN",
-    "stack"
-  ],
-  "author": "Tarik Zejnilovic",
-  "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
