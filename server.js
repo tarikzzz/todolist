@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 
 
 //mongoose.connect('mongodb://localhost/employees');
-mongoose.connect('mongodb://admin:admin@ds131384.mlab.com:31384/heroku_rwqvsl1q' || 'mongodb://localhost/employees', function(err){
+mongoose.connect('mongodb://taki:taki@ds131384.mlab.com:31384/heroku_rwqvsl1q', function(err){
 	if(err){
 		console.log('Not connected to the database!!! ' + err);
 		} else {
