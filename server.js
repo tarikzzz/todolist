@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var mongoose = require('mongoose');
+var port = process.env.PORT || 3000;
 
 
 //mongoose.connect('mongodb://localhost/employees');
