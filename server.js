@@ -71,6 +71,6 @@ app.put('/api/employees/:id', function(req, res){
 		res.json(employee);
 	});
 });
-app.listen(PORT, function(){
+app.listen(port, function(){
 	console.log('server is running on port 3000..');
 });
