@@ -1,13 +1,10 @@
 {
   "name": "tarik",
   "version": "0.0.0",
-  "description": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
   },
-  "author": "tarik",
-  "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
