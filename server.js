@@ -2,7 +2,17 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/employees');
+
+
+//mongoose.connect('mongodb://localhost/employees');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/employees', function(err){
+	if(err){
+		console.log('Not connected to the database!!! ' + err);
+		} else {
+			console.log('Successfully connected to MongoDB');
+		}
+});
+
 var Employee = mongoose.model('Employee', mongoose.Schema({
 	name:String,
 	dept:String,
