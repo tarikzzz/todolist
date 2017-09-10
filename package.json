@@ -1,17 +1,38 @@
+// {
+//   "name": "empappv2",
+//   "version": "1.0.0",
+//   "description": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+//   "main": "readme.js",
+//   "scripts": {
+//     "test": "echo \"Error: no test specified\" && exit 1",
+//     "start": "node server.js"
+//   },
+//   "author": "sikandar rakib",
+//   "license": "ISC",
+//   "dependencies": {
+//     "body-parser": "^1.15.2",
+//     "express": "^4.14.0",
+//     "mongoose": "^4.6.8"
+//   }
+// }
+
+
 {
-  "name": "empappv2",
-  "version": "1.0.0",
+  "name": "tarik",
+  "version": "0.0.0",
   "description": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
-  "main": "readme.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node ./server.js"
   },
-  "author": "sikandar rakib",
+  "author": "tarik",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "mongoose": "^4.6.8"
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^8.0.0",
+    "mongoose": "^4.11.10",
+    "morgan": "^1.8.2"
   }
 }
